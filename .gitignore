@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+
+# Keep directories present, but avoid committing production exports/generated reports by accident.
+data/*
+!data/.gitkeep
+outputs/*
+!outputs/.gitkeep

@@ -1,0 +1,9 @@
+[project]
+name = "accountconnectedcomponents"
+version = "0.1.0"
+description = "Generate account connected-component reports from organization_auth account access exports."
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 100
+
