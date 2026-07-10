@@ -20,6 +20,9 @@ EXCLUDED_EMAILS = {
     "abhay.chauhan@getcrux.ai",
     "nichollsblaine@gmail.com",
     "himank@getcrux.ai",
+    "rishabh.ranjan@getcrux.ai",
+    "manik.bhagat@getcrux.ai",
+    "manikdevbhagat@gmail.com",
 }
 
 
