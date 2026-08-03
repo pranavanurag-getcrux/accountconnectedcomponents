@@ -23,6 +23,7 @@ EXCLUDED_EMAILS = {
     "rishabh.ranjan@getcrux.ai",
     "manik.bhagat@getcrux.ai",
     "manikdevbhagat@gmail.com",
+    "pranav.anurag@getcrux.ai",
 }
 
 
@@ -68,10 +69,14 @@ def load_edges(accounts):
             if row["status"] not in ACCESS_STATUSES:
                 continue
             email = (row.get("user_email") or "").lower()
-            if email in EXCLUDED_EMAILS:
+            comparison_email = email.removeprefix("ftr-mock")
+            if comparison_email in EXCLUDED_EMAILS:
                 continue
             account_name = accounts[account_id]["ad_account_name"]
-            if "cloaked" in account_name.lower() and email.endswith("@gmail.com"):
+            if (
+                "cloaked" in account_name.lower()
+                and comparison_email.endswith("@gmail.com")
+            ):
                 continue
             row["user_email"] = email
             edges_by_user[row["user_id"]].append(row)
