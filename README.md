@@ -47,6 +47,10 @@ Excluded bridge emails:
 - `abhay.chauhan@getcrux.ai`
 - `nichollsblaine@gmail.com`
 - `himank@getcrux.ai`
+- `rishabh.ranjan@getcrux.ai`
+- `manik.bhagat@getcrux.ai`
+- `manikdevbhagat@gmail.com`
+- `pranav.anurag@getcrux.ai`
 
 There is also a Cloaked-specific rule: Gmail user edges are ignored only when the account name contains `Cloaked`.
 

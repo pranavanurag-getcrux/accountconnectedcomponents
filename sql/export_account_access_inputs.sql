@@ -32,7 +32,15 @@
   JOIN organization_auth_user u ON u.user_id = ua.user_id
   WHERE lower(u.user_email) NOT IN (
     'developers@getcrux.ai',
-    lower('PrabhatNOV158@gmail.com')
+    'prabhatnov158@gmail.com',
+    'getcrux.zyra@gmail.com',
+    'abhay.chauhan@getcrux.ai',
+    'nichollsblaine@gmail.com',
+    'himank@getcrux.ai',
+    'rishabh.ranjan@getcrux.ai',
+    'manik.bhagat@getcrux.ai',
+    'manikdevbhagat@gmail.com',
+    'pranav.anurag@getcrux.ai'
   )
   ORDER BY ua.account_id, ua.user_id
 ) TO 'data/org_auth_user_account_edges_non_internal.csv' WITH CSV HEADER
